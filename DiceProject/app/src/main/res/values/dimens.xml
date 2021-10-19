@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_thirtytwo">32sp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="padding_eight">8dp</dimen>
+</resources>

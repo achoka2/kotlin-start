@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">M-Summary2</string>
+    <string name="str_title">title</string>
+    <string name="str_to">to</string>
+    <string name="str_containing_text">Write Here</string>
+    <string name="str_send">SEND</string>
+</resources>

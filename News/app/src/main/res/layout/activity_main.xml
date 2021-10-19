@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/the_guardian_background"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_60dp"
+        android:layout_below="@id/linear_layout"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_12dp"
+        android:layout_margin="@dimen/margin_12dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_right_12dp"
+            android:layout_weight="1"
+            android:background="@color/light_blue"
+            android:padding="@dimen/padding_16dp"
+            android:text="@string/btb_search_text"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_search_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_box"
+            android:hint="@string/str_edit_txt"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="@dimen/padding_16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/load_more_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_12dp"
+        android:background="@color/light_blue"
+        android:padding="@dimen/padding_16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/btn_load_more_txt" />
+</RelativeLayout>

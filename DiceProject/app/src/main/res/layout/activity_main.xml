@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_layout"
+    android:contentDescription="@string/dice_empty"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/my_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/dice_empty"
+        android:padding="@dimen/padding_eight"
+        android:src="@drawable/dice_empty"
+        tools:src="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/my_dice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignEnd="@id/my_dice"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_eight"
+        android:contentDescription="@string/dice_empty"
+        android:src="@drawable/dice_empty"
+        tools:src="@drawable/dice5" />
+</LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_roll_dice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_eight"
+        android:layout_marginTop="@dimen/margin_eight"
+        android:layout_marginEnd="@dimen/margin_eight"
+        android:layout_marginBottom="@dimen/margin_eight"
+        android:text="@string/str_roll"
+        android:textColor="@android:color/background_dark" />
+</RelativeLayout>
